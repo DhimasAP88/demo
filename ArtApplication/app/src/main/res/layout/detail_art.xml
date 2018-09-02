@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d1"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="@dimen/d150"
+            android:layout_height="@dimen/d150"
+            android:layout_marginTop="@dimen/d50"
+            android:layout_gravity="center">
+            <ProgressBar
+                android:layout_centerHorizontal="true"
+                android:id="@+id/progressBar"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/image_art"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail Name"
+            android:textSize="@dimen/s20"
+            android:id="@+id/image_name"
+            android:layout_marginTop="@dimen/d20"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/d55"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    app:contentInsetEnd="0dp"
+    android:background="@color/white"
+    app:contentInsetStart="0dp"
+    android:alpha="1.0">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+        <RelativeLayout
+            android:layout_width="@dimen/d50"
+            android:id="@+id/container_menu"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hometoolbar_imgBtnBack"
+                android:src="@drawable/back_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/d13"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/hometoolbar_imgBtnMenu"
+                android:src="@drawable/menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/d13"
+                android:visibility="visible"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:visibility="visible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/toolbar_title"
+                android:layout_marginLeft="@dimen/d15"
+                android:text="Art Application"
+                android:textSize="@dimen/s25"
+                android:textColor="@color/black"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>
